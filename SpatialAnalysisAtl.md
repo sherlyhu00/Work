@@ -33,41 +33,62 @@ The 2SFCA method was applied using Python and ArcGIS Pro to assess the spatial a
    - Collected population and health facility data.
    - Cleaned and combined data using Python.
    
-![Methodology Diagram](./flowchart.jpg)
+<div style="text-align: center;">
+    <img src="./flowchart.jpg" alt="Methodology Diagram" style="width: 50%;">
+    <p><em>Figure 2: Overview of the Data Collection and Processing Workflow</em></p>
+</div>
 
 2. **Accessibility Calculation**:
    - Applied the 2SFCA method to calculate accessibility, considering different travel distances.
 
-![Methodology Diagram](./2method.JPG)  
+<div style="text-align: center;">
+    <img src="./step1.JPG" alt="2SFCA Methodology Step 1" style="width: 50%;">
+    <p><em>Figure 3: Step 1 of the 2SFCA Method</em></p>
+</div>
 
-![2SFCA step1](./step1.JPG)
+<div style="text-align: center;">
+    <img src="./step21.JPG" alt="2SFCA Methodology Step 2-1" style="width: 50%;">
+    <p><em>Figure 4: Step 2-1 of the 2SFCA Method</em></p>
+</div>
 
-![2SFCA step2-1](./step21.JPG) 
+<div style="text-align: center;">
+    <img src="./step22.JPG" alt="2SFCA Methodology Step 2-2" style="width: 50%;">
+    <p><em>Figure 5: Step 2-2 of the 2SFCA Method</em></p>
+</div>
 
-![2SFCA step2-2](./step22.JPG) 
 
 
-*Figure 2: 2SFCA Method Step Diagram*
 
 ## Results
 
 ### Supply Analysis
 The results from the supply analysis indicated significant spatial disparities in healthcare accessibility.
 
-![Supply Scores in 10 Minutes Drive Mode](./score10.jpg)  
-![Supply Scores in 10 Minutes Drive Mode](./score20.jpg)  
-*Figure 3: Supply Scores in 10 and 20 minutes Minutes Drive Mode*
+
+<div style="text-align: center;">
+    <img src="./score10.jpg" alt="Supply Scores in 10 Minutes Drive Mode" style="width: 50%;">
+    <p><em>Figure 6: Supply Scores in 10 Minutes Drive Mode</em></p>
+</div>
+
+<div style="text-align: center;">
+    <img src="./score20.jpg" alt="Supply Scores in 20 Minutes Drive Mode" style="width: 50%;">
+    <p><em>Figure 7: Supply Scores in 20 Minutes Drive Mode</em></p>
+</div>
 
 ### Accessibility Analysis
 The accessibility map shows varying levels of access across the metro area. Gwinnett County had the highest scores, while counties near the state boundary had the lowest.
 
-![Accessibility Score Rank inAtL metro area](./score.JPG)
-*Table : Accessibility Scores in ATL Metro Area*
-
-![Accessibility Scores in ATL Metro Area](./ac_score.jpg)  
-*Figure 4: Accessibility Scores in ATL Metro Area*
 
 
+<div style="text-align: center;">
+    <img src="./score.JPG" alt="Accessibility Score Rank in ATL Metro Area" style="width: 50%;">
+    <p><em>Figure 8: Accessibility Score Rankings in the ATL Metro Area</em></p>
+</div>
+
+<div style="text-align: center;">
+    <img src="./ac_score.jpg" alt="Accessibility Scores in ATL Metro Area" style="width: 50%;">
+    <p><em>Figure 9: Accessibility Scores in ATL Metro Area</em></p>
+</div>
 
 
 ### Balance of Population Demand and Supply
@@ -75,11 +96,16 @@ A balance score was developed to assess the match between population demand and 
 From the map, there are two "low-low" category and "high and high" category. 
 
 
-![Balance of Population Demand and Supply](./balancetable.JPG)  
-*Table: Balance of Population Demand and Supply Accessibility*
+<div style="text-align: center;">
+    <img src="./balancetable.JPG" alt="Balance of Population Demand and Supply - Table" style="width: 50%;">
+    <p><em>Table 1: Balance of Population Demand and Supply Accessibility</em></p>
+</div>
 
-![Balance of Population Demand and Supply](./balance.jpg)  
-*Figure 5: Balance of Population Demand and Supply Accessibility*
+<div style="text-align: center;">
+    <img src="./balance.jpg" alt="Balance of Population Demand and Supply - Map" style="width: 50%;">
+    <p><em>Figure 10: Balance of Population Demand and Supply Accessibility Map</em></p>
+</div>
+
 
 ## Conclusion
 The 2SFCA method provided valuable insights into the spatial accessibility of healthcare facilities in the Atlanta metro area. The study highlights the need for improvements in healthcare services in areas with low accessibility.
