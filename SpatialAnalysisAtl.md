@@ -6,7 +6,7 @@ This project evaluates the spatial accessibility of health facilities within the
 ## Background
 The study focuses on the Atlanta-Sandy Springs-Roswell metro area, which includes 29 counties. According to U.S. Census data, the population has been steadily increasing, particularly in counties like Fulton and Gwinnet.
 
-![Population Distribution in ATL Metro Area](./images/population_distribution.png)  
+![Population Distribution in ATL Metro Area](./ppldistribute.jpg)  
 *Figure 1: Population distribution in the ATL metro area*
 
 ## Problem Statement
