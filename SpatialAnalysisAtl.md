@@ -39,6 +39,8 @@ The 2SFCA method was applied using Python and ArcGIS Pro to assess the spatial a
 ![2SFCA step2-1](./step21.JPG) 
 
 ![2SFCA step2-2](./step22.JPG) 
+
+
 *Figure 2: 2SFCA Method Step Diagram*
 
 ## Results
@@ -46,19 +48,20 @@ The 2SFCA method was applied using Python and ArcGIS Pro to assess the spatial a
 ### Supply Analysis
 The results from the supply analysis indicated significant spatial disparities in healthcare accessibility.
 
-![Supply Scores in 10 Minutes Drive Mode](./images/supply_10min.png)  
-*Figure 3: Supply Scores in 10 Minutes Drive Mode*
+![Supply Scores in 10 Minutes Drive Mode](./score10.jpg)  
+![Supply Scores in 10 Minutes Drive Mode](./score20.jpg)  
+*Figure 3: Supply Scores in 10 and 20 minutes Minutes Drive Mode*
 
 ### Accessibility Analysis
 The accessibility map shows varying levels of access across the metro area. Gwinnett County had the highest scores, while counties near the state boundary had the lowest.
 
-![Accessibility Scores in ATL Metro Area](./images/accessibility_scores.png)  
+![Accessibility Scores in ATL Metro Area](.ac_score.jpg)  
 *Figure 4: Accessibility Scores in ATL Metro Area*
 
 ### Balance of Population Demand and Supply
 A balance score was developed to assess the match between population demand and healthcare supply.
 
-![Balance of Population Demand and Supply](./images/balance_population_demand.png)  
+![Balance of Population Demand and Supply](./balance.jpg)  
 *Figure 5: Balance of Population Demand and Supply*
 
 ## Conclusion
