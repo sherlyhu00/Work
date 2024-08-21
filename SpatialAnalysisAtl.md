@@ -34,7 +34,7 @@ The 2SFCA method was applied using Python and ArcGIS Pro to assess the spatial a
 2. **Accessibility Calculation**:
    - Applied the 2SFCA method to calculate accessibility, considering different travel distances.
 
-![Methodology Diagram](./2method.jpg)  
+![Methodology Diagram](./2method.JPG)  
 
 ![2SFCA step1](./step1.JPG)
 
