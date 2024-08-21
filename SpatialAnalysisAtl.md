@@ -28,11 +28,13 @@ The 2SFCA method was applied using Python and ArcGIS Pro to assess the spatial a
 1. **Data Collection and Processing**:
    - Collected population and health facility data.
    - Cleaned and combined data using Python.
+   
+![Methodology Diagram](./flowchart.jpg)
 
 2. **Accessibility Calculation**:
    - Applied the 2SFCA method to calculate accessibility, considering different travel distances.
 
-![Methodology Diagram](./flowchart.jpg)  
+![Methodology Diagram](./2method.jpg)  
 
 ![2SFCA step1](./step1.JPG)
 
