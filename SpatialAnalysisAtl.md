@@ -59,7 +59,9 @@ The accessibility map shows varying levels of access across the metro area. Gwin
 *Figure 4: Accessibility Scores in ATL Metro Area*
 
 ![Accessibility Score Rank inAtL metro area](./score.JPG)
-*Table : Accessibility Scores in ATL Metro Area
+*Table : Accessibility Scores in ATL Metro Area*
+
+
 ### Balance of Population Demand and Supply
 A balance score was developed to assess the match between population demand and healthcare supply.
 
