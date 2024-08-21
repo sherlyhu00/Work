@@ -55,18 +55,25 @@ The results from the supply analysis indicated significant spatial disparities i
 ### Accessibility Analysis
 The accessibility map shows varying levels of access across the metro area. Gwinnett County had the highest scores, while counties near the state boundary had the lowest.
 
+![Accessibility Score Rank inAtL metro area](./score.JPG)
+*Table : Accessibility Scores in ATL Metro Area*
+
 ![Accessibility Scores in ATL Metro Area](./ac_score.jpg)  
 *Figure 4: Accessibility Scores in ATL Metro Area*
 
-![Accessibility Score Rank inAtL metro area](./score.JPG)
-*Table : Accessibility Scores in ATL Metro Area*
+
 
 
 ### Balance of Population Demand and Supply
 A balance score was developed to assess the match between population demand and healthcare supply.
+From the map, there are two "low-low" category and "high and high" category. 
+
+
+![Balance of Population Demand and Supply](.balancetable.JPG)  
+*Table: Balance of Population Demand and Supply Accessibility*
 
 ![Balance of Population Demand and Supply](./balance.jpg)  
-*Figure 5: Balance of Population Demand and Supply*
+*Figure 5: Balance of Population Demand and Supply Accessibility*
 
 ## Conclusion
 The 2SFCA method provided valuable insights into the spatial accessibility of healthcare facilities in the Atlanta metro area. The study highlights the need for improvements in healthcare services in areas with low accessibility.
