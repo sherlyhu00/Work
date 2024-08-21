@@ -1,5 +1,6 @@
-# Work
-Transportation&amp;GIS related work and projects
+# Welcome to my Portfolio
+
+## My work focuses mainly on transportation and the GIS involved, concentrating on accessibility and transit equity in metropolitan areas.
 
 
 # GIS related work
