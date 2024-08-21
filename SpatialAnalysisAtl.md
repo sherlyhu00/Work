@@ -55,7 +55,7 @@ The results from the supply analysis indicated significant spatial disparities i
 ### Accessibility Analysis
 The accessibility map shows varying levels of access across the metro area. Gwinnett County had the highest scores, while counties near the state boundary had the lowest.
 
-![Accessibility Scores in ATL Metro Area](.ac_score.jpg)  
+![Accessibility Scores in ATL Metro Area](./ac_score.jpg)  
 *Figure 4: Accessibility Scores in ATL Metro Area*
 
 ### Balance of Population Demand and Supply
