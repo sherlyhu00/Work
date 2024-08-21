@@ -1,0 +1,11 @@
+# Spatial Accessibility Evaluation of Health Facilities in Atlanta Metro Area
+
+## Abstract
+
+This project focuses on evaluating the spatial accessibility of health facilities within the Atlanta Metro Area using the Hierarchical Two-Step Floating Catchment Area (2SFCA) method. The study is motivated by the significant demand for healthcare services in the rapidly growing Atlanta metropolitan region, which includes 29 counties. The project aims to quantify the accessibility of public health facilities, particularly during the COVID-19 pandemic, when the balance between healthcare supply and demand became critically important.
+
+The analysis involved gathering relevant data from sources such as the U.S. Census Bureau and OpenStreetMap (OSM). Key datasets included population data, health facility locations, major roads, and bed sizes of health facilities. The data was processed and analyzed using Python, ArcGIS, and the ArcPy module.
+
+The 2SFCA method was employed to assess spatial accessibility, considering factors such as driving distance and travel time. The results revealed significant spatial disparities in healthcare accessibility across the Atlanta Metro Area, with some regions, particularly those closer to the city center, showing better access to healthcare facilities. The study also introduced a balance score to assess the match between population demand and the quality of healthcare services provided.
+
+The findings underscore the importance of considering spatial accessibility and population demand in urban healthcare planning. The project concludes with recommendations for enhancing healthcare accessibility in underserved areas and highlights the limitations of the 2SFCA method, particularly its lack of consideration for distance decay and other variables that could influence healthcare access.
