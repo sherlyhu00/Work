@@ -69,7 +69,7 @@ A balance score was developed to assess the match between population demand and 
 From the map, there are two "low-low" category and "high and high" category. 
 
 
-![Balance of Population Demand and Supply](.balancetable.JPG)  
+![Balance of Population Demand and Supply](./balancetable.JPG)  
 *Table: Balance of Population Demand and Supply Accessibility*
 
 ![Balance of Population Demand and Supply](./balance.jpg)  
