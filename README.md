@@ -9,8 +9,8 @@ Transportation and GIS related work and projects
 
 ## Electric Vehicle 
 
--[Optimization of Electric Vehicle charge Locations,2023](https://storymaps.arcgis.com/stories/baaa0c9ce3a44c9e8a328160274f9e2c)
+-[Optimization of Electric Vehicle charge Locations,2024](https://storymaps.arcgis.com/stories/baaa0c9ce3a44c9e8a328160274f9e2c)
 
 ## Transport Safety
 
---[Assessing Bicycle and Pedestrian Safety Near School Zones]()
+--[Assessing Bicycle and Pedestrian Safety Near School Zones,2023](Travel_Safety_injury.md)
