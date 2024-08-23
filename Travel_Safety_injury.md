@@ -183,6 +183,175 @@ The estimated model for predicting the number of traffic injuries involving pede
   </div>
 </div>
 
-### Conclusion
+## Conclusion
 
-- After removing these outliers, the model's accuracy and reliability improved, providing a more accurate representation of the relationship between the variables.
+## References
+
+### References
+
+- McArthur, A., Savolainen, P. T., & Gates, T. J. (2014). Spatial Analysis of Child Pedestrian and Bicycle Crashes: Development of Safety Performance Function for Areas Adjacent to Schools. *Transportation Research Record, 2465*(1), 57-63. [https://doi.org/10.3141/2465-08](https://doi.org/10.3141/2465-08)
+
+- Clifton, K. J., & Kreamer-Fults, K. (2007). An examination of the environmental attributes associated with pedestrian-vehicular crashes near public schools. *Accident; analysis and prevention, 39*(4), 708–715. [https://doi.org/10.1016/j.aap.2006.11.003](https://doi.org/10.1016/j.aap.2006.11.003)
+
+- Abdel-Aty, M., Chundi, S. S., & Lee, C. (2007). Geo-spatial and log-linear analysis of pedestrian and bicyclist crashes involving school-aged children. *Journal of safety research, 38*(5), 571–579. [https://doi.org/10.1016/j.jsr.2007.04.006](https://doi.org/10.1016/j.jsr.2007.04.006)
+
+- Lascala, E. A., Gruenewald, P. J., & Johnson, F. W. (2004). An ecological study of the locations of schools and child pedestrian injury collisions. *Accident; analysis and prevention, 36*(4), 569–576. [https://doi.org/10.1016/S0001-4575(03)00063-0](https://doi.org/10.1016/S0001-4575(03)00063-0)
+
+## Appendix:Programming Code Reference
+
+
+
+
+```r
+library(tidyverse)
+library(tidycensus)
+library(sf)
+library(car)
+
+
+library(ggplot2)
+census_api <- '' # add API key here
+census_api_key(census_api)
+my_counties <- c(
+  "Los Angeles County", "Ventura County", "Orange County", "San Bernardino County",
+  "Riverside County", "San Diego County", "San Francisco County", "Alameda County",
+  "San Mateo County", "Santa Clara County", "Contra Costa County", "Marin County"
+)
+
+
+# Fetch ACS data for population and race (2018)
+pop2018 <- get_acs(
+  geography = 'tract', state = 'CA', county = my_counties,
+  variables = c(
+    total_pop = "DP05_0001E", p_white = "DP05_0037PE", p_black = "DP05_0038PE",
+    p_asian = "DP05_0044PE", p_hispanic = "DP05_0071PE"
+  ),
+  year = 2018, geometry = TRUE, survey = "acs5", output = "wide"
+)
+
+
+# Calculate population density (people per square mile)
+pop2018.var <- pop2018 %>% select(GEOID, NAME, total_pop, p_white, p_black, p_asian, p_hispanic)
+
+pop2018.sep <- pop2018.var %>% separate(NAME, into = c("tract", "county", "state"), sep = ", ")
+
+#Fetch median income data (2018)
+med_income2018 <- get_acs(
+  geography = 'tract', state = 'CA', county = my_counties,
+  variables = c(median_income = "S1903_C03_015E"),
+  year = 2018, geometry = TRUE, output = "wide"
+)
+med_income2018.var <- med_income2018 %>% select(GEOID, NAME, median_income) %>%
+  separate(NAME, into = c("tract", "county", "state"), sep = ", ")
+
+#Fetch average family size data (2018)
+fam_size2018 <- get_acs(
+  geography = 'tract', state = 'CA', county = my_counties,
+  variables = c(family_size = "S1101_C01_004E"),
+  year = 2018, geometry = TRUE, output = "wide"
+)
+fam_size2018.var <- fam_size2018 %>% select(GEOID, NAME, family_size) %>%
+  separate(NAME, into = c("tract", "county", "state"), sep = ", ")
+
+# Transform coordinates to a consistent CRS
+pop_race_transformed <- st_transform(pop2018.sep, crs = 4326)
+med_income_transformed <- st_transform(med_income2018.var, crs = 4326)
+fam_size_transformed <- st_transform(fam_size2018.var, crs = 4326)
+
+final.2018.19.halfmi_tract <- final.2018.19.halfmi %>%
+  st_join(pop_race_transformed, join = st_within) %>%
+  st_join(med_income_transformed, join = st_within) %>%
+  st_join(fam_size_transformed, join = st_within)
+
+
+final_table <- final_1.table %>%
+  select(NCESSCH, CNTY, NMCNTY, LOCALE, GEOID.x, tract.x, county.x, state.x,
+         ct_ped_killed_2015_16, ct_ped_injured_2015_16, ct_bike_killed_2015_16, ct_bike_injured_2015_16,
+         ct_ped_killed_2018_19, ct_ped_injured_2018_19, ct_bike_killed_2018_19, ct_bike_injured_2018_19,
+         ct_ped_killed_2021_22, ct_ped_injured_2021_22, ct_bike_killed_2021_22, ct_bike_injured_2021_22,
+         total_pop, p_white, p_black, p_asian, p_hispanic, population_density,
+         median_income, family_size, geometry2015_16, geometry2018_19, geometry2021_22)
+
+
+
+write_csv(final_table, "schools_crash_counts_census_new.csv")
+
+#repeat the process for the selcted year
+pop2015 <- get_acs(
+  geography = 'tract', state = 'CA', county = my_counties,
+  variables = c(total_pop = "DP05_0001E", p_white = "DP05_0032PE", p_black = "DP05_0033PE", p_asian = "DP05_0039PE", p_hispanic = "DP05_0066PE"),
+  year = 2015, geometry = TRUE, output = "wide"
+)
+pop2015.var <- pop2015 %>% select(GEOID, NAME, total_pop, p_white, p_black, p_asian, p_hispanic) %>%
+  separate(NAME, into = c("tract", "county", "state"), sep = ", ")
+
+pop2021 <- get_acs(
+  geography = 'tract', state = 'CA', county = my_counties,
+  variables = c(total_pop = "DP05_0001E", p_white = "DP05_0032PE", p_black = "DP05_0033PE", p_asian = "DP05_0039PE", p_hispanic = "DP05_0066PE"),
+  year = 2021, geometry = TRUE, output = "wide"
+)
+pop2021.var <- pop2021 %>% select(GEOID, NAME, total_pop, p_white, p_black, p_asian, p_hispanic) %>%
+  separate(NAME, into = c("tract", "county", "state"), sep = ", ")
+
+
+# Prepare the final dataset for regression analysis
+final_data <- pop2018.sep %>%
+  left_join(med_income2018.var, by = "GEOID") %>%
+  left_join(fam_size2018.var, by = "GEOID")
+
+
+# Create a simplified regression model based on the variables
+model <- lm(Total_Killed_or_Injured ~ population_density + total_pop + p_black +
+              p_hispanic + family_size + median_income + is_suburban +
+              intersection_density + local_road_percentage + crosswalk_density,
+            data = final_data)
+
+
+# Summary of the model
+summary(model)
+
+
+# Cook's Distance to identify influential points
+cook_dist <- cooks.distance(model)
+plot(cook_dist, main="Cook's Distance", ylab="Cook's Distance", xlab="Observation")
+abline(h = 4/(nrow(final_data)-length(model$coefficients)-1), col="red")
+
+high_influence <- which(cook_dist > 0.04)
+final_data_filtered <- final_data[-high_influence, ]
+model_filtered <- lm(Total_Killed_or_Injured ~ population_density + total_pop + p_black +
+                       p_hispanic + family_size + median_income + is_suburban +
+                       intersection_density + local_road_percentage + crosswalk_density,
+                     data = final_data_filtered)
+summary(model_filtered)
+
+# Residuals Analysis 
+par(mfrow = c(1, 1))
+plot(model_filtered$residuals, main="Residuals Plot", ylab="Residuals", xlab="Fitted Values")
+abline(h = 0, col="red")
+
+#  Multicollinearity 
+vif_values <- vif(model_filtered)
+print(vif_values)
+
+#  Nonlinearity
+ggplot(final_data_filtered, aes(.fitted, .resid)) +
+  geom_point() +
+  geom_hline(yintercept = 0, color = "red") +
+  labs(x = "Fitted Values", y = "Residuals") +
+  ggtitle("Residuals vs Fitted Values")
+
+#  Multicollinearity Visualization
+correlation_matrix <- final_data_filtered %>%
+  select(population_density, total_pop, p_black, p_hispanic, family_size, median_income, 
+         is_suburban, intersection_density, local_road_percentage, crosswalk_density) %>%
+  cor()
+
+ggcorr(correlation_matrix, label = TRUE, label_size = 3)
+
+
+
+
+
+
+
+
