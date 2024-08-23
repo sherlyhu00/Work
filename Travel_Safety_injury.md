@@ -86,7 +86,7 @@ Traffic injury and fatality data were sourced from the University of California,
 </div>
 
 <div style="flex: 1; text-align: right;">
-    <img src="path_to_your_image/study_area.png" alt="Study Area" style="max-width: 100%; height: auto;">
+    <img src="study_area.png" alt="Study Area" style="max-width: 100%; height: auto;">
 </div>
 
 </div>
@@ -101,7 +101,7 @@ A multiple linear regression model was constructed to predict the total number o
 
 The estimated model for predicting the number of traffic injuries involving pedestrians and bicyclists near school areas in California is shown below:
 
-![Regression Model]()
+![Regression Model](regression_model.png)
 
 **Variables:**
 - **population_density**: Number of people per square mile
@@ -132,12 +132,12 @@ The estimated model for predicting the number of traffic injuries involving pede
   <div style="flex: 1;">
     <ul>
       <li>Below is a visualization of the Cook's distance chart highlighting the outliers:</li>
-      <li>The map below shows the location of the significant outlier, Treasure Island:</li>
+<!--       <li>The map below shows the location of the significant outlier, Treasure Island:</li> -->
     </ul>
   </div>
   <div style="flex: 1;">
-    <img src="path_to_your_image/cooks_distance_chart.png" alt="Cook's Distance Chart" style="float: right; width: 50%;">
-    <img src="path_to_your_image/treasure_island_outlier_map.png" alt="Treasure Island Outlier" style="float: right; width: 50%;">
+    <img src="cook_dis.png" alt="Cook's Distance Chart" style="float: right; width: 50%;">
+<!--     <img src="path_to_your_image/treasure_island_outlier_map.png" alt="Treasure Island Outlier" style="float: right; width: 50%;"> -->
   </div>
 </div>
 
@@ -157,7 +157,7 @@ The estimated model for predicting the number of traffic injuries involving pede
     </ul>
   </div>
   <div style="flex: 1;">
-    <img src="path_to_your_image/residual_plot.png" alt="Residual Plot" style="float: right; width: 50%;">
+    <img src="res_pre.png" alt="Residual Plot" style="float: right; width: 50%;">
   </div>
 </div>
 
@@ -179,7 +179,8 @@ The estimated model for predicting the number of traffic injuries involving pede
     </ul>
   </div>
   <div style="flex: 1;">
-    <img src="path_to_your_image/correlation_matrix.png" alt="Correlation Matrix" style="float: right; width: 50%;">
+    <img src="multi1.png" alt="Correlation Matrix" style="float: right; width: 50%;">
+     <img src="multi2.png" alt="Correlation Matrix" style="float: right; width: 50%;">
   </div>
 </div>
 
