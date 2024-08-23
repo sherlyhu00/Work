@@ -121,8 +121,6 @@ The 2SFCA method provided valuable insights into the spatial accessibility of he
 
 ```python
 # -*- coding: utf-8 -*-
-# Author: Yirui Hu
-# Date: 2023/12/08
 import arcpy
 import pandas as pd
 import numpy as np
