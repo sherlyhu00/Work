@@ -48,8 +48,7 @@ Traffic injury and fatality data were sourced from the University of California,
 ### Data Preprocessing
 
 1. **Subsetting and Geocorrection**:
-   - **Subsetting**: We focused on the counties of interest, filtering the datasets accordingly.
-   - **Geocorrection**: The data was geocorrected to ensure all datasets were aligned to a consistent coordinate system, using a threshold of less than 0.05 errors.
+   The data was geocorrected to ensure all datasets were aligned to a consistent coordinate system, using a threshold of less than 0.05 errors.
 
 2. **Feature Engineering**:
    - **Intersection Density**: Calculated the density of intersections within each census tract to capture the complexity of the road network.
@@ -149,7 +148,7 @@ The estimated model for predicting the number of traffic injuries involving pede
 - **Residuals Examination**: Conducted a visual examination of residuals to check for heteroskedasticity.
 - **Clustering Observed**: Noticed a significant amount of clustering in the lower values in the residual plot.
 
-### Visualization
+
 <div style="display: flex;">
   <div style="flex: 1;">
     <ul>
