@@ -3,7 +3,7 @@ Transportation and GIS related work and projects
 
 ## Accessibility Analysis
 
--[Spatial Accessibility Evaluation of Health Facilities in Atlanta Metro Area](/GIS-work/SpatialAnalysisAtl.md)
+-[Spatial Accessibility Evaluation of Health Facilities in Atlanta Metro Area](/SpatialAnalysisAtl.md)
 
 -[How transfer location impact public transit accessibility?](https://storymaps.arcgis.com/stories/93fd1dd9e5454d8786e5ee01e15e329e)
 
