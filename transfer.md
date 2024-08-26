@@ -21,7 +21,6 @@ In San Francisco, public transportation, particularly the light rail transit sys
 - Compare different accessibility models to identify effective methods for evaluating transit accessibility.
 
 
----
 
 ## Methodology
 
@@ -72,7 +71,7 @@ A binary parameter indicates whether a trip requires a transfer. Direct routes a
   <img src="trasfer.png" alt="Transfer density based on transit location" style="width: 50%;" />
   <p><em>Figure 3: Transfer density based on transit location</em></p>
 </div>
----
+
 
 ## Results
 
@@ -93,6 +92,7 @@ The accessibility of each census tract is represented by the average trip probab
   <img src="zone_ac2.png" alt="Transfer density based on transit location" style="width: 50%;" />
   <p><em>Figure 5: Zone-Based Transit Accessibility of all Census Tracts in San Francisco(travel time)</em></p>
 </div>
+
 ### Transit Accessibility Example
 
 To explore the impact of transfer locations on a single census tract area, census tract 168.02 is chosen. 
@@ -137,7 +137,9 @@ The study focuses on the Muni Metro system and does not account for multimodal t
 
 ---
 
-## References
+## ArcGIS Story Map  
+
+[Click](https://storymaps.arcgis.com/stories/93fd1dd9e5454d8786e5ee01e15e329e)
 
 ## References
 
