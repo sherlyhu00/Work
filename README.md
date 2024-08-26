@@ -7,7 +7,7 @@ Investigating the spatial and temporal dimensions of accessibility, with a focus
 
 -[Spatial Accessibility Evaluation of Health Facilities in Atlanta Metro Area,2023](https://github.com/sherlyhu00/Work/blob/GIS-work/SpatialAnalysisAtl.md)
 
--[How transfer location impact public transit accessibility?,2024](https://storymaps.arcgis.com/stories/93fd1dd9e5454d8786e5ee01e15e329e)
+-[How transfer location impact public transit accessibility?,2024](transfer.md)
 
 ## 	Emerging Mobility
 
