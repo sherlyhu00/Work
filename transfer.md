@@ -20,8 +20,6 @@ In San Francisco, public transportation, particularly the light rail transit sys
 - Analyze the spatial distribution of stations and identify barriers to accessibility.
 - Compare different accessibility models to identify effective methods for evaluating transit accessibility.
 
-![Muni Metro Map](path/to/muni_metro_map.png)
-*Figure 1: Muni Metro Map of San Francisco (Data Source: SFMTA)*
 
 ---
 
@@ -38,7 +36,7 @@ San Francisco is the focal area for this study, chosen for its dense population 
 
 <div style="text-align: center;">
   <img src="study_area.png" alt="Study Area with Metro Routes and Stops" style="width: 50%;" />
-  <p><em>Figure 2: Study Area with Metro Routes and Stops</em></p>
+  <p><em>Figure 1: Study Area with Metro Routes and Stops</em></p>
 </div>
 
 ### Transit Travel Time Component
@@ -59,7 +57,7 @@ San Francisco is the focal area for this study, chosen for its dense population 
 
 <div style="text-align: center; margin-top: 20px;">
   <img src="figure2.png" alt="Decay Function" />
-  <p><em>Figure 3:The stop transit demand probability decay function </em></p>
+  <p><em>Figure 2:The stop transit demand probability decay function </em></p>
 </div>
 
 ### Transit Transfer Location Component
@@ -72,7 +70,7 @@ A binary parameter indicates whether a trip requires a transfer. Direct routes a
 
 <div style="text-align: center;">
   <img src="trasfer.png" alt="Transfer density based on transit location" style="width: 50%;" />
-  <p><em>Figure 4: Transfer density based on transit location</em></p>
+  <p><em>Figure 3: Transfer density based on transit location</em></p>
 </div>
 ---
 
@@ -88,12 +86,12 @@ The accessibility of each census tract is represented by the average trip probab
 
 <div style="text-align: center;">
   <img src="zone_ac1.png" alt="Transfer density based on transit location" style="width: 50%;" />
-  <p><em>Figure 5: Zone-Based Transit Accessibility of all Census Tracts in San Francisco(travel time and transfer location)</em></p>
+  <p><em>Figure 4: Zone-Based Transit Accessibility of all Census Tracts in San Francisco(travel time and transfer location)</em></p>
 </div>
 
 <div style="text-align: center;">
   <img src="zone_ac2.png" alt="Transfer density based on transit location" style="width: 50%;" />
-  <p><em>Figure 6: Zone-Based Transit Accessibility of all Census Tracts in San Francisco(travel time)</em></p>
+  <p><em>Figure 5: Zone-Based Transit Accessibility of all Census Tracts in San Francisco(travel time)</em></p>
 </div>
 ### Transit Accessibility Example
 
@@ -101,12 +99,12 @@ To explore the impact of transfer locations on a single census tract area, censu
 
 <div style="text-align: center;">
   <img src="cen_ac1.png" alt="Transfer density based on transit location" style="width: 50%;" />
-  <p><em>Figure 7: Transit Network impacts the transit accessibility example(travel time and transfer location)</em></p>
+  <p><em>Figure 6: Transit Network impacts the transit accessibility example(travel time and transfer location)</em></p>
 </div>
 
 <div style="text-align: center;">
   <img src="cen_ac2.png" alt="Transfer density based on transit location" style="width: 50%;" />
-  <p><em>Figure 8: Transit Network impacts the transit accessibility example(travel time and transfer location)</em></p>
+  <p><em>Figure 7: Transit Network impacts the transit accessibility example(travel time and transfer location)</em></p>
 </div>
 
 ---
@@ -116,11 +114,11 @@ Public transportation is crucial for equitable access to essential services. Thi
 
 <div style="text-align: center;">
   <img src="compare1.png" alt="Transfer density based on transit location" style="width: 50%;" />
-  <p><em>Figure 9: Change in Transit Accessibility Level by Incorporating the Transfer Location Component</em></p>
+  <p><em>Figure 8: Change in Transit Accessibility Level by Incorporating the Transfer Location Component</em></p>
 </div>
 <div style="text-align: center;">
   <img src="compare2.png" alt="Transfer density based on transit location" style="width: 50%;" />
-  <p><em>Figure10: Change in Transit Accessibility Level by Incorporating the Transfer Location Component（example）</em></p>
+  <p><em>Figure 9: Change in Transit Accessibility Level by Incorporating the Transfer Location Component（example）</em></p>
 </div>
 
 
