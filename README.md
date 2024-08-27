@@ -13,8 +13,6 @@ Investigating the spatial and temporal dimensions of accessibility, with a focus
 
 Exploring the implications of new and emerging transportation technologies, such as autonomous vehicles, shared mobility services, and micromobility, on urban transportation networks and planning.
 
--[Optimization of Electric Vehicle charge Locations,2024](https://storymaps.arcgis.com/stories/baaa0c9ce3a44c9e8a328160274f9e2c)
-
 ## Travel Safety and Behaviors
 Analyzing the interplay between travel safety and behaviors, including the factors influencing mode choice, route selection, and how safety concerns impact travel patterns.
 
