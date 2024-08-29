@@ -2,6 +2,14 @@
 
 ---
 
+
+## ArcGIS Story Map  
+
+[Click](https://storymaps.arcgis.com/stories/93fd1dd9e5454d8786e5ee01e15e329e)
+
+## The Paper Source
+[Click](Capstone_Project_Finish_30.pdf)
+
 ## Abstract
 
 The light rail transit system in San Francisco plays a crucial role in urban public transportation, significantly impacting mobility and accessibility. This study enhances the accessibility of the light rail system by integrating transit station location and travel time into accessibility calculations. A comprehensive approach was employed, leveraging data from SFMTA, Open Street Map, and U.S. Census, to analyze the spatial distribution of transit stations and their impact on accessibility.
@@ -135,11 +143,7 @@ The study reveals that the strategic placement of transfer stations significantl
 The study focuses on the Muni Metro system and does not account for multimodal transit behavior. Additionally, it does not consider peak vs. non-peak hour variations, which could influence accessibility.
 
 
----
 
-## ArcGIS Story Map  
-
-[Click](https://storymaps.arcgis.com/stories/93fd1dd9e5454d8786e5ee01e15e329e)
 
 ## References
 
