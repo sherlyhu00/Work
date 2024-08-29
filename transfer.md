@@ -8,7 +8,7 @@
 [Click](https://storymaps.arcgis.com/stories/93fd1dd9e5454d8786e5ee01e15e329e)
 
 ## The Paper Source
-[Click](Capstone_Project_Finish_30-converted.html)
+[Click](https://gtvault-my.sharepoint.com/:b:/g/personal/yhu691_gatech_edu/EXoq7EEcXIJKg5LIGg1UDE0BdLkEeog8MXE7yrsQYJy3WA?e=UwouSi)
 
 ## Abstract
 
